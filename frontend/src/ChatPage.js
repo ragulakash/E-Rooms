@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://e-rooms.onrender.com/");
 
 function ChatPage({ room, username }) {
   const [messages, setMessages] = useState([]);
